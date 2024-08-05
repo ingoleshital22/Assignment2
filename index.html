@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historiacl Monuments</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 70vw;
+            padding: 2rem 1rem;
+            margin: 0 auto;
+            /* background-color: aqua; */
+            background-color: rgb(236, 230, 230);
+        }
+
+        .header_container {
+            margin-bottom: 2.8rem;
+        }
+
+        .header_title {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .header_description {
+            max-width: 568px;
+            text-align: center;
+            color: rgb(49, 43, 43);
+            margin: 0 auto;
+        }
+
+        .main_container {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        .card_container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(214, 196, 196);
+            border-radius: 5px;
+            overflow: hidden;
+
+        }
+
+        .card_image_container {
+            position: relative;
+            overflow: hidden;
+            height: 10rem;
+        }
+
+        .card_image {
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card_title_container {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+
+        .card_container:hover .card_image {
+            transform: scale(1.1);
+            transition-duration: 200ms;
+        }
+
+        .card_title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 0.6rem;
+            color: rgb(62, 58, 58);
+            line-height: 1.5rem;
+        }
+
+        .card_title_anchor:hover .card_title {
+            color: rgb(31, 31, 214);
+        }
+
+        .card_description {
+            color: rgb(62, 58, 58);
+            font-size: 0.9rem;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            padding: 3px;
+            border-radius: 9px;
+            background-color: rgb(200, 200, 228);
+            color: rgb(43, 43, 157);
+            border: 1px solid rgb(113, 108, 108);
+
+        }
+    </style>
+</head>
+
+<body class="body_container">
+    <div class="container">
+        <header class="header_container">
+            <h1 class="header_title">Historical Monuments</h1>
+            <p class="header_description">
+                There are several stunning historical monuments in India across the length and breadth of the country.
+                <!-- Aside from the rich heritage, culture, and architecture, the land is decorated with many forts, palaces, archaeological ruins, temples, and churches. -->
+            </p>
+        </header>
+
+        <main class="main_container">
+            <!-- card 1 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSCpAo4T3nmtbgM_vaEPiZd4lkyKYcTI4rm-sSijUUFUXfsAHifkQGMeUrdgoxrr--HqgMy1Bj7eLAAFHRlWf0STx9wB62AjeAMiHfqYw"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Taj Mahal</h2>
+                    </a>
+                    <p class="card_description">
+                        The Taj Mahal 'Crown of the Palace' is an ivory-white marble mausoleum on the right bank of the
+                        river Yamuna in Agra, Uttar Pradesh, India.
+                        <!-- It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall. -->
+                    </p>
+                </div>
+                <div class="button">
+                    <!-- <span>Show more</span> -->
+                    <button>
+                        <a href="https://en.wikipedia.org/wiki/Taj_Mahal">show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 1 ends here -->
+
+            <!-- card 2 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EFGOcF0C9YiIZP0bmX2_z4WNm0zLtPJRHQ&s"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Red Fort</h2>
+                    </a>
+                    <p class="card_description">
+                        The Red Fort or Lal Qila is a historic fort in Delhi, India, that historically served as the
+                        main residence of the Mughal emperors. Emperor Shah Jahan commissioned construction of the Red
+                        Fort on 12 May 1639, when he decided to shift his capital from Agra to Delhi.
+                    </p>
+                </div>
+                <div class="button">
+                    <!-- <span>Show more</span> -->
+                    <button>
+                        <a href="https://en.wikipedia.org/wiki/Red_Fort">Show more</a>
+                    </button>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- card 2 ends here -->
+
+            <!-- card 3 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS7OwMDQ7EjqVbX2oTXrZGzin4YgfV5kpPw&s"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Qutub Minar</h2>
+                    </a>
+                    <p class="card_description">
+                        The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that
+                        forms part of the Qutb complex, which lies at the site of Delhi's oldest fortified city, Lal
+                        Kot, founded by the Tomar Rajputs. It consists of 399 steps
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <a href="https://en.wikipedia.org/wiki/Qutb_Minar">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 3 ends here -->
+
+            <!-- card 4 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTyFankTvIAcwvvN-o9dRfbThmNOg7GZ-Wu8IfeozEVrF7dxnEpBe15kkz3cISWsrnrDs355SA3yxUOBywF0YeR6U88ps4EszaS5vUhUA"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Hawa Mahal</h2>
+                    </a>
+                    <p class="card_description">
+                        The Hawa Mahal is a palace in the city of Jaipur, Rajasthan, India. Built from red and pink
+                        sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's
+                        chambers.The structure was built in 1799 by the Maharaja Sawai Pratap Singh, grandson of
+                        Maharaja Sawai Jai Singh, the founder of the city of Jhunjhunu in the state of Rajasthan
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <a href="https://en.wikipedia.org/wiki/Hawa_Mahal">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 4 ends here -->
+
+            <!-- card 5 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp2IFyFllC72MKgpKDU7zGnNBVC5OISpUIYw&s"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Sun Temple</h2>
+                    </a>
+                    <p class="card_description">
+                        Konark Sun Temple is a 13th-century CE Hindu Sun temple at Konark about 35 kilometres (22 mi)
+                        northeast from Puri city on the coastline in Puri district, Odisha, India.[1][2] The temple is
+                        attributed to king Narasingha Deva I of the Eastern Ganga dynasty about 1250 CE.
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <!-- <span>Show more</span> -->
+                        <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 5 ends here -->
+
+            <!-- card 6 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdT57QKwta1w0DeSitHi96PyUkbrrV3_uBA&s"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Golden Temple</h2>
+                    </a>
+                    <p class="card_description">
+                        The Golden Temple (also known as the Harmandir Sahib,'House of God', or the Darbār Sahib,or
+                        Suvaran Mandir) is a gurdwara located in the city of Amritsar, Punjab, India.It is the
+                        pre-eminent spiritual site of Sikhism. It is one of the holiest sites in Sikhism, alongside the
+                        Gurdwara Darbar Sahib Kartarpur in Kartarpur, and Gurdwara Janam Asthan in Nankana Sahib.
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <!-- <span>Show more</span> -->
+                        <a href="https://en.wikipedia.org/wiki/Golden_Temple">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 6 ends here -->
+
+            <!-- card 7 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTKHdZ2AUHoxR2HtB1RPiiW0Xov9Xf1mcBm4wCcKbLDDO6QioVVmnFXbEJBq0N7DiPCUogrLl8v4WNukDrjsyqWZdnc_gM2gM8NDMSVzw"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Ajanta Caves</h2>
+                    </a>
+                    <p class="card_description">
+                        The Ajanta Caves are 30 rock-cut Buddhist cave monuments dating from the second century BCE to
+                        about 480 CE in Aurangabad district (a.k.a. Chhatrapati Sambhaji Nagar district) of Maharashtra
+                        state in India.Ajanta Caves are a UNESCO World Heritage Site.
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <!-- <span>Show more</span> -->
+                        <a href="https://en.wikipedia.org/wiki/Ajanta_Caves">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 7 ends here -->
+
+            <!-- card 8 starts here -->
+            <div class="card_container">
+                <a href="#" class="card_image_container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/450px-Victoria_Memorial_situated_in_Kolkata.jpg"
+                        loading="lazy" class="card_image" alt="">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_title">Victoria Memorial</h2>
+                    </a>
+                    <p class="card_description">
+                        The Victoria Memorial is a large marble monument on the Maidan in Central Kolkata, having its
+                        entrance on the Queen's Way. It was built between 1906 and 1921 by the British Raj. It is
+                        dedicated to the memory of Queen Victoria, the Empress of India from 1876 to 1901.
+                    </p>
+                </div>
+                <div class="button">
+                    <button>
+                        <!-- <span>Show more</span> -->
+                        <a href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">Show more</a>
+                    </button>
+                </div>
+            </div>
+            <!-- card 8 ends here -->
+
+        </main>
+    </div>
+</body>
+
+</html>
